@@ -2,7 +2,6 @@ Git BRANCH ---
 
 git remote set-url origin https://BenBinhTran@github.com/BenBinhTran/BinhBenTran.github.io.git
 
-git remote set-url origin https://github.com/PhoenixWeaver/phoenixflixV41.git
 
 git credential-manager github logout
 
@@ -20,6 +19,10 @@ git remote add origin https://github.com/VirtualCV/VirtualCV.github.io.git
 git push -u origin main
 
 =========
+# Clear old credentials if switching to a new VirtualCV GitHub account
+<!-- git credential-manager github logout BenBinhTran -->
+git credential-manager github logout PhoenixWeaver
+git credential-manager github list 2>&1
 
 # 1. Start fresh on main and get latest updates
 git checkout main
