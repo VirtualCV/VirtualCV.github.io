@@ -19,7 +19,7 @@ The builder is maintained separately from this repository. Drafts are saved loca
 
 [Open the CV builder](https://phoenixflix.vercel.app/CVbuilder).
 
-![Preview of the CV builder, including photo upload, HTML download, and print controls](images/virtualCV.jpg)
+![Preview of the CV builder, including photo upload, HTML download, and print controls](images/VirtualCV.jpg)
 
 ### Example hosted CV
 
