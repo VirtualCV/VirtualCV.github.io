@@ -1,25 +1,37 @@
 # VirtualCV
 
-VirtualCV is a static resume-hosting site published with GitHub Pages. Candidates can create and download a CV using the builder hosted on PhoenixFlix, then request a personalized page hosted here.
+VirtualCV hosts candidate CVs as static pages on GitHub Pages. Candidates can build and download a CV first, then request that it be published here as a personalized online page.
 
-## Candidate workflow
+## Create and host a CV
 
-1. Open the [CV builder](https://phoenixflix.vercel.app/CVbuilder), edit the sample content, and add a profile photo.
-2. Download the finished CV as HTML or print/save it as a PDF.
-3. Email the standalone HTML file to [The VirtualCV team](mailto:ThePhoenixFlix@gmail.com?subject=VirtualCV%20online%20hosting%20request) to request online hosting.
-4. Once published, share the candidate’s direct page link with recruiters.
+1. Open the [PhoenixFlix CV builder](https://phoenixflix.vercel.app/CVbuilder).
+2. Click the sample text to edit it, add a profile photo, and review the completed CV.
+3. Download a standalone HTML copy or print and save the CV as a PDF.
+4. To request online hosting, email the standalone HTML file to [The VirtualCV team](mailto:ThePhoenixFlix@gmail.com?subject=VirtualCV%20online%20hosting%20request).
+5. After the page is published, share its direct link with recruiters.
 
-The builder saves drafts locally in the candidate’s browser. Drafts are not uploaded automatically.
+The builder is maintained separately from this repository. Drafts are saved locally in the candidate’s browser and are not uploaded automatically.
+
+### CV builder preview
+
+[Open the CV builder](https://phoenixflix.vercel.app/CVbuilder).
+
+![Preview of the CV builder, including photo upload, HTML download, and print controls](images/CVbuilder.jpg)
+
+### Example hosted CV
+
+[View the sample CV online](https://virtualcv.github.io/JohnDoe/).
+
+![Preview of a sample CV hosted on VirtualCV](images/onlineCV.jpg)
 
 ## Published pages
 
-- [VirtualCV landing page](./index.html) explains how candidates build a CV and request hosting.
-- [Ben Tran portfolio](./BenTran/) is an interactive portfolio.
+- [VirtualCV landing page](./index.html)
+- [Ben Tran interactive portfolio](./BenTran/)
 - [Ben Tran CV](./BenTran.html)
-- [JohnDoe CV](./JohnDoe.html)
-- [JohnDoe printable CV](./JohnDoe/)
+- [John Doe sample CV](./JohnDoe/)
 
-The root-level HTML files and profile folders are independent pages. Update the intended page and its associated assets when editing a profile.
+Root-level CV files and profile folders are separate pages. Update the intended page and its associated assets when editing a profile.
 
 ## Repository layout
 
@@ -28,9 +40,8 @@ The root-level HTML files and profile folders are independent pages. Update the 
 ├── index.html
 ├── favicon.svg
 ├── images/
-│   └── CVbuilder.jpg
-├── ProfilePics/
-├── BenTran.html
+│   ├── CVbuilder.jpg
+│   └── onlineCV.jpg
 ├── BenTran/
 │   ├── index.html
 │   ├── Certificates/
@@ -38,16 +49,10 @@ The root-level HTML files and profile folders are independent pages. Update the 
 │   └── images/
 ├── JohnDoe/
 │   ├── index.html
-│   ├── JohnDoe.html
 │   └── images/
 └── Save/
 ```
 
-The CV builder is maintained separately at `phoenixflix.vercel.app/CVbuilder`; it is not part of this GitHub Pages repository.
+## Preview locally
 
-![CV Builder Tool Template](images/CVbuilder.jpg)
-
-## Preview Sample CV Online
-https://VirtualCV.GitHub.io/JohnDoe
-
-
+Open `index.html` in a browser or run a static web server from the repository root. The CV builder link opens the separately hosted PhoenixFlix tool.
