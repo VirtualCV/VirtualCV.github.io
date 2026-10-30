@@ -26,16 +26,16 @@ git checkout main
 git pull origin main
 
 # 2. Create and switch to your new feature branch
-git checkout -b feature/Add-Vivian-CV
+git checkout -b feature/V2
 
 # 3. Add and commit your new CV files to the feature branch
 git add .
 git commit -m "✨ $(date +%d%m%y) $(date +%H%M) ✨ - Add Vivian CV profile"
 
 # 4. Push the feature branch to GitHub
-git push -u origin feature/Add-Vivian-CV
+git push -u origin feature/V2
 
 # 5. Switch back to main, merge the feature, and push live
 git checkout main
-git merge feature/Add-Vivian-CV --no-ff -m "🔀 Merge $(date +%d%m%y) $(date +%H%M) ✨ - Add Vivian CV ✨"
+git merge feature/V2 --no-ff -m "🔀 Merge $(date +%d%m%y) $(date +%H%M) ✨ - Add Vivian CV ✨"
 git push origin main
