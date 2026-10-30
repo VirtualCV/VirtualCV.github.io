@@ -12,11 +12,14 @@ VirtualCV hosts candidate CVs as static pages on GitHub Pages. Candidates can bu
 
 The builder is maintained separately from this repository. Drafts are saved locally in the candidate’s browser and are not uploaded automatically.
 
+<!-- ### VirtualCV preview
+![Preview of the Virtual CV page](images/virtualCV.jpg) -->
+
 ### CV builder preview
 
 [Open the CV builder](https://phoenixflix.vercel.app/CVbuilder).
 
-![Preview of the CV builder, including photo upload, HTML download, and print controls](images/CVbuilder.jpg)
+![Preview of the CV builder, including photo upload, HTML download, and print controls](images/virtualCV.jpg)
 
 ### Example hosted CV
 
