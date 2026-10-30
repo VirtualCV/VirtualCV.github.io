@@ -2,7 +2,7 @@ Git BRANCH ---
 
 git remote set-url origin https://BenBinhTran@github.com/BenBinhTran/BinhBenTran.github.io.git
 
-git remote set-url origin https://github.com/PhoenixWeaver/phoenixflixV31.git
+git remote set-url origin https://github.com/PhoenixWeaver/phoenixflixV41.git
 
 git credential-manager github logout
 
@@ -26,16 +26,16 @@ git checkout main
 git pull origin main
 
 # 2. Create and switch to your new feature branch
-git checkout -b feature/V3
+git checkout -b feature/V4
 
 # 3. Add and commit your new CV files to the feature branch
 git add .
-git commit -m "✨ $(date +%d%m%y) $(date +%H%M) ✨ - Add CV builder Update profile"
+git commit -m "✨ $(date +%d%m%y) $(date +%H%M) ✨ - Add CV builder Mobile profile"
 
 # 4. Push the feature branch to GitHub
-git push -u origin feature/V3
+git push -u origin feature/V4
 
 # 5. Switch back to main, merge the feature, and push live
 git checkout main
-git merge feature/V3 --no-ff -m "🔀 Merge $(date +%d%m%y) $(date +%H%M) ✨ - Add CV builder Update ✨"
+git merge feature/V4 --no-ff -m "🔀 Merge $(date +%d%m%y) $(date +%H%M) ✨ - Add CV builder Update ✨"
 git push origin main

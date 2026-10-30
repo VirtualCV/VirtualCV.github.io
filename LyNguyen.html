@@ -17,7 +17,7 @@ Our goal is to provide a clean, professional, and visually appealing CV that eff
 <!doctype html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#1e293b">
@@ -146,8 +146,13 @@ Our goal is to provide a clean, professional, and visually appealing CV that eff
                 margin: 0 auto 8px;
                 padding: 12px;
                 border-radius: 10px;
+                overflow: visible;
             }
-            .page-content { overflow: visible; }
+            .page-content {
+                flex: 0 0 auto;
+                min-height: auto;
+                overflow: visible;
+            }
             .cv-layout { height: auto; flex-direction: column; }
             .cv-sidebar { flex-basis: auto; }
             .cv-main { padding-top: 0; }
@@ -400,7 +405,7 @@ Our goal is to provide a clean, professional, and visually appealing CV that eff
                     <aside class="cv-sidebar">
                         
                         <div class="photo-container">
-                          <img src="/ProfilePics/LyNguyen.jpg" alt="Nguyễn Khánh Ly" class="profile-photo">
+                          <img src="ProfilePics/LyNguyen.jpg" alt="Nguyễn Khánh Ly" class="profile-photo">
                            <!-- <img src="images/LyNguyen.jpg" alt="Nguyễn Khánh Ly" class="profile-photo"> -->
                
                         </div>
