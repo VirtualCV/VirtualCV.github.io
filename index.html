@@ -203,6 +203,45 @@ Website: https://phoenixflix.vercel.app
             display: block;
         }
 
+        .mobile-demo {
+            max-width: 940px;
+            margin: 44px auto 0;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
+            align-items: center;
+            gap: 36px;
+            text-align: left;
+        }
+
+        .mobile-demo h2 {
+            margin: 0 0 10px;
+            color: var(--navy);
+            font-size: clamp(22px, 3vw, 30px);
+            letter-spacing: -0.03em;
+        }
+
+        .mobile-demo p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .mobile-demo a:focus-visible {
+            border-radius: 12px;
+            outline: 3px solid #38bdf8;
+            outline-offset: 4px;
+        }
+
+        .mobile-demo img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+        }
+
         .workflow {
             max-width: 940px;
             margin: 42px auto 0;
@@ -371,6 +410,17 @@ Website: https://phoenixflix.vercel.app
                 border-radius: 12px;
             }
 
+            .mobile-demo {
+                margin-top: 36px;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .mobile-demo img {
+                width: min(100%, 320px);
+                margin-inline: auto;
+            }
+
             .workflow {
                 margin-top: 24px;
                 grid-template-columns: 1fr;
@@ -440,6 +490,20 @@ Website: https://phoenixflix.vercel.app
                     <img src="images/CVbuilder.jpg" alt="Preview of the CV builder, showing editing, photo upload, HTML download, and PDF print controls">
                 </a>
             </div>
+
+            <section class="mobile-demo" aria-labelledby="mobile-demo-heading">
+                <div>
+                    <h2 id="mobile-demo-heading">A hosted CV that works on mobile</h2>
+                    <p>
+                        Candidate pages are easy to read on a phone, too.
+                        This sample shows how a hosted CV appears on a mobile screen.
+                        <a class="hosting-link" href="https://virtualcv.github.io/JohnDoe/" target="_blank" rel="noopener noreferrer">Open the sample CV</a>.
+                    </p>
+                </div>
+                <a href="https://virtualcv.github.io/JohnDoe/" target="_blank" rel="noopener noreferrer" aria-label="Open the sample hosted CV shown in this mobile preview">
+                    <img src="images/VirtualCV_mobile.jpg" alt="John Doe sample CV displayed in a mobile browser">
+                </a>
+            </section>
 
             <section class="workflow" aria-label="How to create and host your CV">
                 <article class="workflow-step">
