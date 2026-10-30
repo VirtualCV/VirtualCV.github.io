@@ -22,6 +22,7 @@ Website: https://phoenixflix.vercel.app
             --navy: #1e293b;
             --navy-deep: #0f172a;
             --blue: #0284c7;
+            --blue-dark: #0369a1;
             --blue-light: #e0f2fe;
             --page: #f8fafc;
             --muted: #64748b;
@@ -97,11 +98,11 @@ Website: https://phoenixflix.vercel.app
         main {
             width: min(100%, 1120px);
             margin: auto;
-            padding-block: 72px;
+            padding-block: 64px;
         }
 
         .hero {
-            max-width: 760px;
+            max-width: 940px;
             margin: 0 auto;
             text-align: center;
         }
@@ -126,7 +127,7 @@ Website: https://phoenixflix.vercel.app
         }
 
         h1 {
-            max-width: 720px;
+            max-width: 800px;
             margin: 0 auto;
             color: var(--navy-deep);
             font-size: clamp(42px, 7vw, 72px);
@@ -140,16 +141,120 @@ Website: https://phoenixflix.vercel.app
         }
 
         .intro {
-            max-width: 590px;
+            max-width: 650px;
             margin: 22px auto 0;
             color: var(--muted);
             font-size: clamp(16px, 2vw, 18px);
             line-height: 1.75;
         }
 
+        .builder-link {
+            min-height: 48px;
+            margin-top: 24px;
+            padding: 0 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 9px;
+            background: var(--navy);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 8px 18px rgba(30, 41, 59, 0.16);
+            transition: background-color 160ms ease, transform 160ms ease;
+        }
+
+        .builder-link:hover {
+            background: var(--blue-dark);
+            transform: translateY(-1px);
+        }
+
+        .builder-link:focus-visible,
+        .hosting-link:focus-visible {
+            border-radius: 4px;
+            outline: 3px solid #38bdf8;
+            outline-offset: 4px;
+        }
+
+        .builder-link svg {
+            width: 17px;
+            height: 17px;
+        }
+
+        .builder-preview {
+            margin: 44px auto 0;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: #ffffff;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+            text-align: left;
+        }
+
+        .builder-preview a {
+            display: block;
+        }
+
+        .builder-preview img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .workflow {
+            max-width: 940px;
+            margin: 42px auto 0;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            text-align: left;
+        }
+
+        .workflow-step {
+            padding: 22px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 14px;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            background: var(--blue-light);
+            color: var(--blue-dark);
+            font-size: 13px;
+            font-weight: 750;
+        }
+
+        .workflow-step h2 {
+            margin: 0 0 8px;
+            color: var(--navy);
+            font-size: 17px;
+        }
+
+        .workflow-step p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .hosting-link {
+            color: var(--blue-dark);
+            font-weight: 650;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
         .access-card {
             max-width: 660px;
-            margin: 42px auto 0;
+            margin: 52px auto 0;
             padding: 24px;
             display: flex;
             align-items: flex-start;
@@ -261,8 +366,23 @@ Website: https://phoenixflix.vercel.app
                 margin-bottom: 18px;
             }
 
-            .access-card {
+            .builder-preview {
                 margin-top: 32px;
+                border-radius: 12px;
+            }
+
+            .workflow {
+                margin-top: 24px;
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .workflow-step {
+                padding: 18px;
+            }
+
+            .access-card {
+                margin-top: 38px;
                 padding: 18px;
                 gap: 12px;
             }
@@ -301,12 +421,42 @@ Website: https://phoenixflix.vercel.app
 
     <main>
         <section class="hero" aria-labelledby="page-title">
-            <div class="eyebrow">Professional resume hosting</div>
-            <h1 id="page-title">A clearer view of <span>every career.</span></h1>
+            <div class="eyebrow">Build it. Download it. Share it.</div>
+            <h1 id="page-title">Create your CV first. <span>Then bring it online.</span></h1>
             <p class="intro">
-                VirtualCV hosts professional resumes and portfolios in one simple place.
-                To view a profile, open the personalized link shared with you by the candidate.
+                Start with our free CV builder. Edit your details, add a photo, then download your CV as HTML or PDF.
+                When it’s ready, request online hosting and we’ll help publish your candidate page.
             </p>
+
+            <a class="builder-link" href="https://phoenixflix.vercel.app/CVbuilder" target="_blank" rel="noopener noreferrer">
+                Build your CV
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+            <div class="builder-preview">
+                <a href="https://phoenixflix.vercel.app/CVbuilder" target="_blank" rel="noopener noreferrer" aria-label="Open the PhoenixFlix CV builder">
+                    <img src="images/CVbuilder.jpg" alt="Preview of the CV builder, showing editing, photo upload, HTML download, and PDF print controls">
+                </a>
+            </div>
+
+            <section class="workflow" aria-label="How to create and host your CV">
+                <article class="workflow-step">
+                    <span class="step-number" aria-hidden="true">1</span>
+                    <h2>Build your CV</h2>
+                    <p>Use the CV builder to personalize your resume and add your profile photo. Download a standalone HTML copy or save it as a PDF.</p>
+                </article>
+                <article class="workflow-step">
+                    <span class="step-number" aria-hidden="true">2</span>
+                    <h2>Request online hosting</h2>
+                    <p>
+                        Email your downloaded HTML file to
+                        <a class="hosting-link" href="mailto:ThePhoenixFlix@gmail.com?subject=VirtualCV%20online%20hosting%20request">The VirtualCV team</a>
+                        to request a personalized online CV page.
+                    </p>
+                </article>
+            </section>
 
             <aside class="access-card" aria-labelledby="access-heading">
                 <span class="access-icon" aria-hidden="true">
@@ -316,12 +466,12 @@ Website: https://phoenixflix.vercel.app
                     </svg>
                 </span>
                 <div>
-                    <h2 id="access-heading">Have a candidate’s link?</h2>
+                    <h2 id="access-heading">Looking for a candidate’s CV?</h2>
                     <p>
-                        Use the direct URL they sent you. There’s no public profile directory on this page.
+                        Open the personalized link shared by the candidate. There’s no public profile directory on this page.
                     </p>
-                    <span class="url-example">https://virtualcv.github.io/Name</span>
-                    <span class="url-example">https://virtualcv.github.io/ElonMusk</span>
+                    <span class="url-example">your-site.example/Name</span>
+                    <br> <span class="url-example">VirtualCV.GitHub.io/JohnDoe</span> <a href="https://VirtualCV.GitHub.io/JohnDoe" target="_blank" rel="noopener noreferrer">View CV</a> </br>
                 </div>
             </aside>
 
