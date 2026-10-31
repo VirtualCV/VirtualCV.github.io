@@ -15,7 +15,9 @@ git init
 git add .
 git commit -m "🎉 Initial commit: VirtualCV Hub setup and Ben's CV"
 git branch -M main
-git remote add origin https://github.com/VirtualCV/VirtualCV.github.io.git
+<!-- git remote add origin https://github.com/VirtualCV/VirtualCV.github.io.git -->
+
+git remote add origin https://github.com/VirtualCV/VirtualCV.git
 git push -u origin main
 
 =========
