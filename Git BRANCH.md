@@ -33,7 +33,7 @@ git checkout -b feature/V5
 
 # 3. Add and commit your new CV files to the feature branch
 git add .
-git commit -m "✨ $(date +%d%m%y) $(date +%H%M) ✨ - Add CV builder YourName View CV profile new image"
+git commit -m "✨ $(date +%d%m%y) $(date +%H%M) ✨ - Add CV builder View CV profile new image"
 
 # 4. Push the feature branch to GitHub
 git push -u origin feature/V5
