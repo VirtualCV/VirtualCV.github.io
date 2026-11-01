@@ -42,5 +42,5 @@ git push -u origin feature/V5
 
 # 5. Switch back to main, merge the feature, and push live
 git checkout main
-git merge feature/V5 --no-ff -m "🔀 Merge $(date +%d%m%y) $(date +%H%M) ✨ - Add CV builder Update ✨"
+git merge feature/V5 --no-ff -m "🔀 Merge $(date +%d%m%y) $(date +%H%M) ✨ - Add CV builder templates ✨"
 git push origin main
