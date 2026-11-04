@@ -20,6 +20,9 @@ git remote set-url origin https://github.com/VirtualCV/VirtualCV.github.io.git
 <!-- git remote add origin https://github.com/VirtualCV/VirtualCV.git -->
 git push -u origin main
 
+gh auth login --hostname github.com --git-protocol https --web
+gh api user --jq .login
+git remote set-url origin https://github.com/VirtualCV/VirtualCV.github.io.git
 =========
 # Clear old credentials if switching to a new VirtualCV GitHub account
 <!-- git credential-manager github logout BenBinhTran -->
